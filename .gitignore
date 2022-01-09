@@ -1,0 +1,10 @@
+.vs/
+_ReSharper.Caches/
+obj/
+bin/
+out/
+packages/
+/*.orig
+build/
+*.user
+tests/UpdaterTest/ForTestPurposes/*
