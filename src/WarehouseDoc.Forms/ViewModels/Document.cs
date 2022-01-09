@@ -5,73 +5,17 @@
 
     public class AlphaViewModel : BasePropertyChanged
     {
-        private int _id;
-        private string _header;
-        private string _client;
-        private decimal _grossPrice;
-        private decimal _netPrice;
-        private int _amoud;
+        public int Id { get; set; }
 
-        public int Id
-        {
-            get => _id;
-            set
-            {
-                _id = value;
-                OnPropertyChanged(nameof(Id));
-            }
-        }
+        public string Header { get; set; }
 
-        public string Header
-        {
-            get => _header;
-            set
-            {
-                _header = value;
-                OnPropertyChanged(nameof(Header));
-            }
+        public string Client { get; set; }
 
-        }
+        public decimal GrossPrice { get; set; }
 
-        public string Client
-        {
-            get => _client;
-            set
-            {
-                _client = value;
-                OnPropertyChanged(nameof(Client));
-            }
-        }
+        public decimal NetPrice { get; set; }
 
-        public decimal GrossPrice
-        {
-            get => _grossPrice;
-            set
-            {
-                _grossPrice = value;
-                OnPropertyChanged(nameof(GrossPrice));
-            }
-        }
-
-        public decimal NetPrice
-        {
-            get => _netPrice;
-            set
-            {
-                _netPrice = value; 
-                OnPropertyChanged(nameof(NetPrice));
-            }
-        }
-
-        public int Amoud
-        {
-            get => _amoud;
-            set
-            {
-                _amoud = value;
-                OnPropertyChanged(nameof(Amoud));
-            }
-        }
+        public int Amoud { get; set; }
     }
 
     public class BetaViewModel<TValue> : BasePropertyChanged

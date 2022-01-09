@@ -30,18 +30,18 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit3 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit4 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit5 = new DevExpress.XtraEditors.TextEdit();
+            this.textEditHeader = new DevExpress.XtraEditors.TextEdit();
+            this.textEditClient = new DevExpress.XtraEditors.TextEdit();
+            this.textEditGrossPrice = new DevExpress.XtraEditors.TextEdit();
+            this.textEditNetPrice = new DevExpress.XtraEditors.TextEdit();
+            this.textEditAmoudPrice = new DevExpress.XtraEditors.TextEdit();
             this.snapDockManager1 = new DevExpress.Snap.Extensions.SnapDockManager(this.components);
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.ColumnId = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -51,21 +51,16 @@
             this.ColumnNetPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnAmoud = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
-            this.lookUpEdit1 = new DevExpress.XtraEditors.LookUpEdit();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.listView1 = new System.Windows.Forms.ListView();
             this.tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditHeader.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditClient.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditGrossPrice.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditNetPrice.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditAmoudPrice.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.snapDockManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -78,11 +73,11 @@
             this.tableLayoutPanel1.Controls.Add(this.labelControl3, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.labelControl4, 0, 3);
             this.tableLayoutPanel1.Controls.Add(this.labelControl5, 0, 4);
-            this.tableLayoutPanel1.Controls.Add(this.textEdit1, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.textEdit2, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.textEdit3, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.textEdit4, 1, 3);
-            this.tableLayoutPanel1.Controls.Add(this.textEdit5, 1, 4);
+            this.tableLayoutPanel1.Controls.Add(this.textEditHeader, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.textEditClient, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.textEditGrossPrice, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.textEditNetPrice, 1, 3);
+            this.tableLayoutPanel1.Controls.Add(this.textEditAmoudPrice, 1, 4);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(749, 13);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 5;
@@ -144,50 +139,50 @@
             this.labelControl5.TabIndex = 4;
             this.labelControl5.Text = "Amoud";
             // 
-            // textEdit1
+            // textEditHeader
             // 
-            this.textEdit1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textEdit1.Location = new System.Drawing.Point(76, 8);
-            this.textEdit1.Margin = new System.Windows.Forms.Padding(4);
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Size = new System.Drawing.Size(172, 22);
-            this.textEdit1.TabIndex = 5;
+            this.textEditHeader.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.textEditHeader.Location = new System.Drawing.Point(76, 8);
+            this.textEditHeader.Margin = new System.Windows.Forms.Padding(4);
+            this.textEditHeader.Name = "textEditHeader";
+            this.textEditHeader.Size = new System.Drawing.Size(172, 22);
+            this.textEditHeader.TabIndex = 5;
             // 
-            // textEdit2
+            // textEditClient
             // 
-            this.textEdit2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textEdit2.Location = new System.Drawing.Point(76, 46);
-            this.textEdit2.Margin = new System.Windows.Forms.Padding(4);
-            this.textEdit2.Name = "textEdit2";
-            this.textEdit2.Size = new System.Drawing.Size(172, 22);
-            this.textEdit2.TabIndex = 6;
+            this.textEditClient.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.textEditClient.Location = new System.Drawing.Point(76, 46);
+            this.textEditClient.Margin = new System.Windows.Forms.Padding(4);
+            this.textEditClient.Name = "textEditClient";
+            this.textEditClient.Size = new System.Drawing.Size(172, 22);
+            this.textEditClient.TabIndex = 6;
             // 
-            // textEdit3
+            // textEditGrossPrice
             // 
-            this.textEdit3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textEdit3.Location = new System.Drawing.Point(76, 84);
-            this.textEdit3.Margin = new System.Windows.Forms.Padding(4);
-            this.textEdit3.Name = "textEdit3";
-            this.textEdit3.Size = new System.Drawing.Size(172, 22);
-            this.textEdit3.TabIndex = 7;
+            this.textEditGrossPrice.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.textEditGrossPrice.Location = new System.Drawing.Point(76, 84);
+            this.textEditGrossPrice.Margin = new System.Windows.Forms.Padding(4);
+            this.textEditGrossPrice.Name = "textEditGrossPrice";
+            this.textEditGrossPrice.Size = new System.Drawing.Size(172, 22);
+            this.textEditGrossPrice.TabIndex = 7;
             // 
-            // textEdit4
+            // textEditNetPrice
             // 
-            this.textEdit4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textEdit4.Location = new System.Drawing.Point(76, 122);
-            this.textEdit4.Margin = new System.Windows.Forms.Padding(4);
-            this.textEdit4.Name = "textEdit4";
-            this.textEdit4.Size = new System.Drawing.Size(172, 22);
-            this.textEdit4.TabIndex = 8;
+            this.textEditNetPrice.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.textEditNetPrice.Location = new System.Drawing.Point(76, 122);
+            this.textEditNetPrice.Margin = new System.Windows.Forms.Padding(4);
+            this.textEditNetPrice.Name = "textEditNetPrice";
+            this.textEditNetPrice.Size = new System.Drawing.Size(172, 22);
+            this.textEditNetPrice.TabIndex = 8;
             // 
-            // textEdit5
+            // textEditAmoudPrice
             // 
-            this.textEdit5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textEdit5.Location = new System.Drawing.Point(77, 160);
-            this.textEdit5.Margin = new System.Windows.Forms.Padding(5);
-            this.textEdit5.Name = "textEdit5";
-            this.textEdit5.Size = new System.Drawing.Size(170, 22);
-            this.textEdit5.TabIndex = 9;
+            this.textEditAmoudPrice.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.textEditAmoudPrice.Location = new System.Drawing.Point(77, 160);
+            this.textEditAmoudPrice.Margin = new System.Windows.Forms.Padding(5);
+            this.textEditAmoudPrice.Name = "textEditAmoudPrice";
+            this.textEditAmoudPrice.Size = new System.Drawing.Size(170, 22);
+            this.textEditAmoudPrice.TabIndex = 9;
             // 
             // snapDockManager1
             // 
@@ -209,6 +204,8 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -220,20 +217,22 @@
             this.ColumnGrossPrice,
             this.ColumnNetPrice,
             this.ColumnAmoud});
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Tahoma", 7.8F);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Tahoma", 7.8F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.Location = new System.Drawing.Point(12, 42);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(8);
             this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(693, 405);
             this.dataGridView1.TabIndex = 0;
             // 
@@ -245,6 +244,7 @@
             this.ColumnId.HeaderText = "Id";
             this.ColumnId.MinimumWidth = 6;
             this.ColumnId.Name = "ColumnId";
+            this.ColumnId.ReadOnly = true;
             this.ColumnId.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             this.ColumnId.Width = 24;
             // 
@@ -255,6 +255,7 @@
             this.ColumnHeader.HeaderText = "Header";
             this.ColumnHeader.MinimumWidth = 6;
             this.ColumnHeader.Name = "ColumnHeader";
+            this.ColumnHeader.ReadOnly = true;
             this.ColumnHeader.Width = 120;
             // 
             // ColumnClient
@@ -264,6 +265,7 @@
             this.ColumnClient.HeaderText = "Client";
             this.ColumnClient.MinimumWidth = 6;
             this.ColumnClient.Name = "ColumnClient";
+            this.ColumnClient.ReadOnly = true;
             this.ColumnClient.Width = 120;
             // 
             // ColumnGrossPrice
@@ -273,6 +275,7 @@
             this.ColumnGrossPrice.HeaderText = "Gross price";
             this.ColumnGrossPrice.MinimumWidth = 6;
             this.ColumnGrossPrice.Name = "ColumnGrossPrice";
+            this.ColumnGrossPrice.ReadOnly = true;
             this.ColumnGrossPrice.Width = 80;
             // 
             // ColumnNetPrice
@@ -282,6 +285,7 @@
             this.ColumnNetPrice.HeaderText = "Net price";
             this.ColumnNetPrice.MinimumWidth = 6;
             this.ColumnNetPrice.Name = "ColumnNetPrice";
+            this.ColumnNetPrice.ReadOnly = true;
             this.ColumnNetPrice.Width = 80;
             // 
             // ColumnAmoud
@@ -291,6 +295,7 @@
             this.ColumnAmoud.HeaderText = "Amoud";
             this.ColumnAmoud.MinimumWidth = 6;
             this.ColumnAmoud.Name = "ColumnAmoud";
+            this.ColumnAmoud.ReadOnly = true;
             this.ColumnAmoud.Width = 50;
             // 
             // groupControl1
@@ -306,62 +311,26 @@
             this.groupControl1.TabIndex = 2;
             this.groupControl1.Text = "groupControl1";
             // 
-            // lookUpEdit1
-            // 
-            this.lookUpEdit1.Location = new System.Drawing.Point(749, 228);
-            this.lookUpEdit1.Margin = new System.Windows.Forms.Padding(5);
-            this.lookUpEdit1.Name = "lookUpEdit1";
-            this.lookUpEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.lookUpEdit1.Properties.DisplayMember = "Client";
-            this.lookUpEdit1.Properties.ValueMember = "Id";
-            this.lookUpEdit1.Size = new System.Drawing.Size(156, 22);
-            this.lookUpEdit1.TabIndex = 4;
-            // 
-            // dataGridView2
-            // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(1039, 16);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowHeadersWidth = 51;
-            this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(240, 150);
-            this.dataGridView2.TabIndex = 5;
-            // 
-            // listView1
-            // 
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(1108, 251);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(121, 97);
-            this.listView1.TabIndex = 6;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1608, 624);
-            this.Controls.Add(this.listView1);
-            this.Controls.Add(this.dataGridView2);
-            this.Controls.Add(this.lookUpEdit1);
             this.Controls.Add(this.groupControl1);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "Form1";
             this.Text = "Form1";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditHeader.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditClient.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditGrossPrice.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditNetPrice.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditAmoudPrice.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.snapDockManager1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.lookUpEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -373,11 +342,11 @@
         private DevExpress.XtraEditors.LabelControl labelControl3;
         private DevExpress.XtraEditors.LabelControl labelControl4;
         private DevExpress.XtraEditors.LabelControl labelControl5;
-        private DevExpress.XtraEditors.TextEdit textEdit1;
-        private DevExpress.XtraEditors.TextEdit textEdit2;
-        private DevExpress.XtraEditors.TextEdit textEdit3;
-        private DevExpress.XtraEditors.TextEdit textEdit4;
-        private DevExpress.XtraEditors.TextEdit textEdit5;
+        private DevExpress.XtraEditors.TextEdit textEditHeader;
+        private DevExpress.XtraEditors.TextEdit textEditClient;
+        private DevExpress.XtraEditors.TextEdit textEditGrossPrice;
+        private DevExpress.XtraEditors.TextEdit textEditNetPrice;
+        private DevExpress.XtraEditors.TextEdit textEditAmoudPrice;
         private DevExpress.Snap.Extensions.SnapDockManager snapDockManager1;
         private DevExpress.XtraEditors.GroupControl groupControl1;
         private System.Windows.Forms.DataGridView dataGridView1;
@@ -387,9 +356,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnGrossPrice;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnNetPrice;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnAmoud;
-        private DevExpress.XtraEditors.LookUpEdit lookUpEdit1;
-        private System.Windows.Forms.ListView listView1;
-        private System.Windows.Forms.DataGridView dataGridView2;
     }
 }
 

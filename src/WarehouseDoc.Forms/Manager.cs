@@ -3,18 +3,15 @@ using WarehouseDoc.Forms.ViewModels;
 
 namespace WarehouseDoc.Forms
 {
-    using System;
     using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
 
-    internal class Manager
+    public class Manager : BasePropertyChanged
     {
+        private AlphaViewModel _selectedItem;
 
         public Manager()
         {
-            var data = new List<AlphaViewModel>()
+            var data = new List<AlphaViewModel>
             {
                 new AlphaViewModel { Id = 1, Header = "Doc1", Client = "Marek", NetPrice = 122, GrossPrice = 100, Amoud = 4 },
                 new AlphaViewModel { Id = 2, Header = "Doc2", Client = "Karol", NetPrice = 122, GrossPrice = 100, Amoud = 3 },
@@ -22,10 +19,84 @@ namespace WarehouseDoc.Forms
             };
 
             Source = new ObservableCollection<AlphaViewModel>(data);
+
         }
 
         public ObservableCollection<AlphaViewModel> Source { get;  }
 
-        public AlphaViewModel SelectedItem { get; set; }
+        public AlphaViewModel SelectedItem
+        {
+            get => _selectedItem;
+            set
+            {
+                _selectedItem = value; 
+                OnPropertyChanged(nameof(Id));
+                OnPropertyChanged(nameof(Header));
+                OnPropertyChanged(nameof(Client));
+                OnPropertyChanged(nameof(GrossPrice));
+                OnPropertyChanged(nameof(NetPrice));
+                OnPropertyChanged(nameof(Amoud));
+            }
+        }
+
+        public int Id
+        {
+            get => SelectedItem.Id;
+            set
+            {
+                SelectedItem.Id = value; 
+                OnPropertyChanged(nameof(Id));
+            }
+        }
+
+        public string Header
+        {
+            get => SelectedItem.Header;
+            set
+            {
+                SelectedItem.Header= value;
+                OnPropertyChanged(nameof(Header));
+            }
+        }
+
+        public string Client
+        {
+            get => SelectedItem.Client;
+            set
+            {
+                SelectedItem.Client= value;
+                OnPropertyChanged(nameof(Client));
+            }
+        }
+
+        public decimal GrossPrice
+        {
+            get => SelectedItem.GrossPrice;
+            set
+            {
+                SelectedItem.GrossPrice = value;
+                OnPropertyChanged(nameof(GrossPrice));
+            }
+        }
+
+        public decimal NetPrice
+        {
+            get => SelectedItem.NetPrice;
+            set
+            {
+                SelectedItem.NetPrice= value;
+                OnPropertyChanged(nameof(NetPrice));
+            }
+        }
+
+        public int Amoud
+        {
+            get => SelectedItem.Amoud;
+            set
+            {
+                SelectedItem.Amoud= value;
+                OnPropertyChanged(nameof(Amoud));
+            }
+        }
     }
 }

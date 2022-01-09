@@ -14,9 +14,13 @@
         [STAThread]
         static void Main()
         {
+            
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            var managerr = new Manager();
+            var view = new Form1();
+            view.BindManager(managerr);
+            Application.Run(view);
         }
     }
 }

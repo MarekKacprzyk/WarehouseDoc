@@ -1,4 +1,5 @@
 ﻿using System.Collections.ObjectModel;
+using DevExpress.XtraEditors;
 using WarehouseDoc.Forms.ViewModels;
 
 namespace WarehouseDoc.Forms
@@ -27,27 +28,33 @@ namespace WarehouseDoc.Forms
                 new AlphaViewModel { Id = 3, Header = "Doc3", Client = "Wojtek", NetPrice = 122, GrossPrice = 100, Amoud = 5 },
             };
             _col = new ObservableCollection<AlphaViewModel>(data);
-            dataGridView1.DataSource = _col;
-            lookUpEdit1.Properties.DataSource = _col;
+            
+        }
 
-            lookUpEdit1.EditValue = _col.First();
-            lookUpEdit1.EditValueChanged += (_, e) =>
-            {
-                var qq = lookUpEdit1.EditValue;
-            };
-
+        public void BindManager(Manager manager)
+        {
+            var source = new BindingSource();
+            source.DataSource = manager.Source;
+            dataGridView1.DataSource = source;
             dataGridView1.SelectionChanged += (_, e) =>
             {
-                var qq = dataGridView1.SelectedCells;
-                var ww = dataGridView1.SelectedRows;
-                var aa = dataGridView1.SelectedColumns;
-                var ss = dataGridView1.SelectionMode;
-
-                var qq1 = dataGridView1.SelectedCells.Count;
-                var ww1 = dataGridView1.SelectedRows.Count;
-                var ww12 = dataGridView1.SelectedRows;
-                var aa1 = dataGridView1.SelectedColumns.Count;
+                if (dataGridView1.SelectedRows.Count > 0)
+                {
+                    manager.SelectedItem = dataGridView1.SelectedRows[0].DataBoundItem as AlphaViewModel;
+                }
             };
+
+            BindTextBox(textEditHeader, manager, nameof(manager.Header));
+            BindTextBox(textEditClient, manager, nameof(manager.Client));
+            BindTextBox(textEditNetPrice, manager, nameof(manager.NetPrice));
+            BindTextBox(textEditGrossPrice, manager, nameof(manager.GrossPrice)); 
+            BindTextBox(textEditAmoudPrice, manager, nameof(manager.Amoud));
+        }
+
+        private static void BindTextBox(BaseEdit control, object model, string modelPropertyName)
+        {
+            control.DataBindings.Add(nameof(control.EditValue), model, modelPropertyName, false,
+                DataSourceUpdateMode.OnPropertyChanged);
         }
     }
 }
