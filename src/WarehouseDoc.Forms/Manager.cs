@@ -7,24 +7,24 @@ namespace WarehouseDoc.Forms
 
     public class Manager : BasePropertyChanged
     {
-        private AlphaViewModel _selectedItem;
+        private DocumnetViewModel _selectedItem;
 
         public Manager()
         {
-            var data = new List<AlphaViewModel>
+            var data = new List<DocumnetViewModel>
             {
-                new AlphaViewModel { Id = 1, Header = "Doc1", Client = "Marek", NetPrice = 122, GrossPrice = 100, Amoud = 4 },
-                new AlphaViewModel { Id = 2, Header = "Doc2", Client = "Karol", NetPrice = 122, GrossPrice = 100, Amoud = 3 },
-                new AlphaViewModel { Id = 3, Header = "Doc3", Client = "Wojtek", NetPrice = 122, GrossPrice = 100, Amoud = 5 },
+                new DocumnetViewModel { Id = 1, Header = "Doc1", Client = "Marek", NetPrice = 122, GrossPrice = 100, Amoud = 4 },
+                new DocumnetViewModel { Id = 2, Header = "Doc2", Client = "Karol", NetPrice = 122, GrossPrice = 100, Amoud = 3 },
+                new DocumnetViewModel { Id = 3, Header = "Doc3", Client = "Wojtek", NetPrice = 122, GrossPrice = 100, Amoud = 5 },
             };
 
-            Source = new ObservableCollection<AlphaViewModel>(data);
+            Source = new ObservableCollection<DocumnetViewModel>(data);
 
         }
 
-        public ObservableCollection<AlphaViewModel> Source { get;  }
+        public ObservableCollection<DocumnetViewModel> Source { get;  }
 
-        public AlphaViewModel SelectedItem
+        public DocumnetViewModel SelectedItem
         {
             get => _selectedItem;
             set

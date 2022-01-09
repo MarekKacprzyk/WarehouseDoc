@@ -184,7 +184,7 @@
     <Compile Include="Properties\Annotations.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModels\BasePropertyChanged.cs" />
-    <Compile Include="ViewModels\Document.cs" />
+    <Compile Include="ViewModels\DocumnetViewModel.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

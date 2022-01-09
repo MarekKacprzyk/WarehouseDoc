@@ -16,7 +16,7 @@ namespace WarehouseDoc.Forms
 
     public partial class Form1 : Form
     {
-        private ObservableCollection<AlphaViewModel> _col;
+        private ObservableCollection<DocumnetViewModel> _col;
         public Form1()
         {
             InitializeComponent();
@@ -31,7 +31,7 @@ namespace WarehouseDoc.Forms
             {
                 if (dataGridView1.SelectedRows.Count > 0)
                 {
-                    manager.SelectedItem = dataGridView1.SelectedRows[0].DataBoundItem as AlphaViewModel;
+                    manager.SelectedItem = dataGridView1.SelectedRows[0].DataBoundItem as DocumnetViewModel;
                 }
             };
 
