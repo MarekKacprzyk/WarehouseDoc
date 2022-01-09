@@ -1,19 +1,19 @@
-**ZADANIE .NET / C#**
+DOTO list
 
->Kandydat ma za zadanie: zaprojektowaæ oraz zaimplementowaæ aplikacjê desktopow¹ w oparciu o
-technologiê WinForms, umo¿liwiaj¹c¹ u¿ytkownikowi realizacjê operacji CRUD na liœcie dokumentów
+>Zadanie: zaprojektowaÄ‡ oraz zaimplementowaÄ‡ aplikacjÄ™ desktopowÄ… w oparciu o
+technologiÄ™ WinForms, umoÅ¼liwiajÄ…cÄ… uÅ¼ytkownikowi realizacjÄ™ operacji CRUD na liÅ›cie dokumentÃ³w
 magazynowych.
 
->Wykorzystany ma zostaæ wzorzec MVVM / MVC oraz kontrolki DevExpress (do pobrania trial).
+>Wykorzystany ma zostaÄ‡ wzorzec MVVM / MVC oraz kontrolki DevExpress (do pobrania trial).
 
->Aplikacja musi logowaæ do pliku / do bazy wykonywane operacje.
+>Aplikacja musi logowaÄ‡ do pliku / do bazy wykonywane operacje.
 
->Dokument magazynowany posiada nastêpuj¹c¹ strukturê: nag³ówek dokumentu (data, numer klient,
-nazwa, cena netto i brutto) oraz lista pozycji przypisanych do nag³ówka (nazwa artyku³u, liczba, cena
+>Dokument magazynowany posiada nastÄ™pujÄ…cÄ… strukturÄ™: nagÅ‚Ã³wek dokumentu (data, numer klient,
+nazwa, cena netto i brutto) oraz lista pozycji przypisanych do nagÅ‚Ã³wka (nazwa artykuÅ‚u, liczba, cena
 netto i brutto).
 
->Dokumenty magazynowe powinny byæ pobierane z relacyjnej bazy danych (MSSQL, PostgreSQL,
+>Dokumenty magazynowe powinny byÄ‡ pobierane z relacyjnej bazy danych (MSSQL, PostgreSQL,
 MySQL).
 
->Ponadto aplikacja powinna zostaæ umieszczona na repozytorium githuba oraz posiadaæ krótk¹
-dokumentacjê i dump bazy danych z któr¹ siê komunikuje.
+>Ponadto aplikacja powinna zostaÄ‡ umieszczona na repozytorium githuba oraz posiadaÄ‡ krÃ³tkÄ…
+dokumentacjÄ™ i dump bazy danych z ktÃ³rÄ… siÄ™ komunikuje.
