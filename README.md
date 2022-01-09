@@ -1,4 +1,4 @@
-DOTO list
+TODO list
 
 >Zadanie: zaprojektować oraz zaimplementować aplikację desktopową w oparciu o
 technologię WinForms, umożliwiającą użytkownikowi realizację operacji CRUD na liście dokumentów
